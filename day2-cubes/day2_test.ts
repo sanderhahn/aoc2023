@@ -1,6 +1,7 @@
 import { assertEquals } from "std/assert/assert_equals.ts";
 import { part1, part2 } from "./day2.ts";
-import { input } from "./input.ts";
+import { loadInput } from "../input.ts";
+const input = loadInput("day2-cubes");
 
 const example = `Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
 Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue

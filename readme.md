@@ -1,5 +1,5 @@
 # Advent of Code 2023
 
 ```bash
-deno test --watch
+deno test --watch --allow-read
 ```

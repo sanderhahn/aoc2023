@@ -1,6 +1,7 @@
 import { assertEquals } from "std/assert/mod.ts";
 import { part1, part2 } from "./day1.ts";
-import { input } from "./input.ts";
+import { loadInput } from "../input.ts";
+const input = loadInput("day1-digits");
 
 const example1 = `1abc2
 pqr3stu8vwx

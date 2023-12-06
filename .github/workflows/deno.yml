@@ -32,4 +32,30 @@ jobs:
         run: deno lint
 
       - name: Run tests
-        run: deno test
+        run: deno test --allow-read --allow-env
+        env:
+          DAY1_INPUT: ${{ secrets.DAY1_INPUT }}
+          DAY2_INPUT: ${{ secrets.DAY2_INPUT }}
+          DAY3_INPUT: ${{ secrets.DAY3_INPUT }}
+          DAY4_INPUT: ${{ secrets.DAY4_INPUT }}
+          DAY5_INPUT: ${{ secrets.DAY5_INPUT }}
+          DAY6_INPUT: ${{ secrets.DAY6_INPUT }}
+          DAY7_INPUT: ${{ secrets.DAY7_INPUT }}
+          DAY8_INPUT: ${{ secrets.DAY8_INPUT }}
+          DAY9_INPUT: ${{ secrets.DAY9_INPUT }}
+          DAY10_INPUT: ${{ secrets.DAY10_INPUT }}
+          DAY11_INPUT: ${{ secrets.DAY11_INPUT }}
+          DAY12_INPUT: ${{ secrets.DAY12_INPUT }}
+          DAY13_INPUT: ${{ secrets.DAY13_INPUT }}
+          DAY14_INPUT: ${{ secrets.DAY14_INPUT }}
+          DAY15_INPUT: ${{ secrets.DAY15_INPUT }}
+          DAY16_INPUT: ${{ secrets.DAY16_INPUT }}
+          DAY17_INPUT: ${{ secrets.DAY17_INPUT }}
+          DAY18_INPUT: ${{ secrets.DAY18_INPUT }}
+          DAY19_INPUT: ${{ secrets.DAY19_INPUT }}
+          DAY20_INPUT: ${{ secrets.DAY20_INPUT }}
+          DAY21_INPUT: ${{ secrets.DAY21_INPUT }}
+          DAY22_INPUT: ${{ secrets.DAY22_INPUT }}
+          DAY23_INPUT: ${{ secrets.DAY23_INPUT }}
+          DAY24_INPUT: ${{ secrets.DAY24_INPUT }}
+          DAY25_INPUT: ${{ secrets.DAY25_INPUT }}
