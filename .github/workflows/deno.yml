@@ -34,6 +34,7 @@ jobs:
       - name: Run tests
         run: deno test --allow-read --allow-env
         env:
+          DAY0_INPUT: ${{ secrets.DAY0_INPUT }}
           DAY1_INPUT: ${{ secrets.DAY1_INPUT }}
           DAY2_INPUT: ${{ secrets.DAY2_INPUT }}
           DAY3_INPUT: ${{ secrets.DAY3_INPUT }}
