@@ -1,7 +1,7 @@
 import { assertEquals } from "std/assert/assert_equals.ts";
 import { part1, part2 } from "./day6.ts";
 import { loadInput } from "../input.ts";
-const input = loadInput("day6-wait-for-it");
+const input = loadInput("day6-wait-for-it/input.txt");
 
 const example = `
 Time:      7  15   30

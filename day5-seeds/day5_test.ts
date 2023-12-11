@@ -1,7 +1,7 @@
 import { assertEquals } from "std/assert/assert_equals.ts";
 import { part1, part2 } from "./day5.ts";
 import { loadInput } from "../input.ts";
-const input = loadInput("day5-seeds");
+const input = loadInput("day5-seeds/input.txt");
 
 const example = `
 seeds: 79 14 55 13

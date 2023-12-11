@@ -4,13 +4,12 @@ function envKeyInput(path: string): string {
   return envKey;
 }
 
-export function loadInput(path: string): string {
-  const filepath = `${path}/input.txt`;
+export function loadInput(filepath: string): string {
   try {
-    return Deno.readTextFileSync(`${path}/input.txt`);
+    return Deno.readTextFileSync(filepath);
   } catch (e) {
     // fallback to env var for continuous integration
-    const envKey = envKeyInput(path);
+    const envKey = envKeyInput(filepath);
     if (Deno.env.has(envKey)) {
       return Deno.env.get(envKey)!;
     }
